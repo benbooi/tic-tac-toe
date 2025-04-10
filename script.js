@@ -100,4 +100,9 @@ cells.forEach(cell => {
     cell.addEventListener('click', handleCellClick);
 });
 
-restartButton.addEventListener('click', restartGame); 
+restartButton.addEventListener('click', restartGame);
+
+// Set initial quote when page loads
+document.addEventListener('DOMContentLoaded', () => {
+    status.textContent = getRandomQuote('x');
+}); 
