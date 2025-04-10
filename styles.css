@@ -4,13 +4,19 @@
     padding: 0;
 }
 
+:root {
+    --shopify-green: #008060;
+    --shopify-green-dark: #004c3f;
+    --shopify-green-light: #c1f0d0;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, var(--shopify-green-dark) 0%, var(--shopify-green) 100%);
     color: white;
 }
 
@@ -27,6 +33,7 @@ h1 {
 #status {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    color: var(--shopify-green-light);
 }
 
 .board {
@@ -47,24 +54,36 @@ h1 {
     font-size: 3rem;
     cursor: pointer;
     border-radius: 10px;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
+    border: 2px solid transparent;
 }
 
 .cell:hover {
     background: rgba(255, 255, 255, 0.2);
+    border-color: var(--shopify-green-light);
+}
+
+.cell.x {
+    color: var(--shopify-green-light);
+}
+
+.cell.o {
+    color: white;
 }
 
 #restartButton {
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    background: #4CAF50;
+    background: var(--shopify-green);
     color: white;
-    border: none;
+    border: 2px solid var(--shopify-green-light);
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 #restartButton:hover {
-    background: #45a049;
+    background: var(--shopify-green-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 } 
