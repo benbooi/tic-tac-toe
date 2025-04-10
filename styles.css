@@ -5,9 +5,9 @@
 }
 
 :root {
-    --shopify-green: #008060;
-    --shopify-green-dark: #004c3f;
-    --shopify-green-light: #c1f0d0;
+    --shopify-purple: #5c6ac4;
+    --shopify-purple-dark: #202e78;
+    --shopify-purple-light: #e3e5fb;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, var(--shopify-green-dark) 0%, var(--shopify-green) 100%);
+    background: linear-gradient(135deg, var(--shopify-purple-dark) 0%, var(--shopify-purple) 100%);
     color: white;
 }
 
@@ -33,7 +33,7 @@ h1 {
 #status {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: var(--shopify-green-light);
+    color: var(--shopify-purple-light);
 }
 
 .board {
@@ -60,11 +60,11 @@ h1 {
 
 .cell:hover {
     background: rgba(255, 255, 255, 0.2);
-    border-color: var(--shopify-green-light);
+    border-color: var(--shopify-purple-light);
 }
 
 .cell.x {
-    color: var(--shopify-green-light);
+    color: var(--shopify-purple-light);
 }
 
 .cell.o {
@@ -74,16 +74,16 @@ h1 {
 #restartButton {
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    background: var(--shopify-green);
+    background: var(--shopify-purple);
     color: white;
-    border: 2px solid var(--shopify-green-light);
+    border: 2px solid var(--shopify-purple-light);
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 #restartButton:hover {
-    background: var(--shopify-green-dark);
+    background: var(--shopify-purple-dark);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 } 
