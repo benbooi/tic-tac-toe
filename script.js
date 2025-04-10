@@ -1,3 +1,4 @@
+// Star Wars themed Tic Tac Toe game
 const board = document.getElementById('board');
 const cells = document.querySelectorAll('[data-cell]');
 const status = document.getElementById('status');
